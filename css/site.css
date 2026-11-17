@@ -337,5 +337,6 @@ main{display:block}
 
 /* Beyond the screen: 4-up cards, multi-column interest list */
 .cols.afk-cards{grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:20px}
-ul.cols3{columns:3 190px;column-gap:28px}
+ul.cols3{columns:2;column-gap:40px}
+@media (max-width:600px){ul.cols3{columns:1}}
 ul.cols3 li{break-inside:avoid}

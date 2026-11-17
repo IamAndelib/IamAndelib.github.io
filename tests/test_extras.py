@@ -47,7 +47,7 @@ def test_404_page(root):
     p = parse(root, "404.html")
     hrefs = [a.get("href") for t, a in p.all if t == "a"]
     assert "/" in hrefs
-    assert any(l.get("href") == "/css/site.css" for l in p.links)
+    assert any((l.get("href") or "").split("?")[0] == "/css/site.css" for l in p.links)
     assert any(t == "img" and a.get("src") == "/img/frog.svg" for t, a in p.all)
     from test_site import load_denylist
     for b in load_denylist():
