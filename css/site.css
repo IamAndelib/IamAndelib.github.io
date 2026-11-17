@@ -320,3 +320,17 @@ main{display:block}
   #rain,#rain.on{display:none!important}
 }
 .fiction-h{margin:28px 0 8px}
+
+/* favourite songs (Beyond the screen → Music) */
+.group.wide{grid-column:1/-1}
+.tracks{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(230px,100%),1fr));gap:10px}
+.track a{display:flex;align-items:center;gap:10px;padding:8px;border:var(--bw) solid var(--border);border-radius:var(--radius);background:var(--surface);color:var(--fg);text-decoration:none;min-width:0}
+.track a:hover,.track a:focus-visible{border-color:var(--accent)}
+.track img{width:56px;height:56px;flex:none;border-radius:2px;background:var(--border)}
+.track span{min-width:0}
+.track b{display:block;font-weight:700;line-height:1.25;overflow-wrap:anywhere}
+.track small{display:block;color:var(--dim);font-size:12px}
+.track .sp{margin-left:auto;color:var(--dim)}
+.track a:hover .sp,.track a:focus-visible .sp{color:var(--accent)}
+[data-skin="vt320"] .track img{filter:url(#crt-vt320)}
+[data-skin="matrix"] .track img{filter:url(#crt-matrix)}
