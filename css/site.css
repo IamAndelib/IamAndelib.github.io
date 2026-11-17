@@ -340,3 +340,7 @@ main{display:block}
 ul.cols3{columns:2;column-gap:40px}
 @media (max-width:600px){ul.cols3{columns:1}}
 ul.cols3 li{break-inside:avoid}
+
+/* favourite books */
+.track.book img{width:48px;height:72px;border-radius:2px}
+@media (min-width:1000px){.afk-cards .span2{grid-column:span 2}}
