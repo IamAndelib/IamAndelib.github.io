@@ -334,3 +334,8 @@ main{display:block}
 .track a:hover .sp,.track a:focus-visible .sp{color:var(--accent)}
 [data-skin="vt320"] .track img{filter:url(#crt-vt320)}
 [data-skin="matrix"] .track img{filter:url(#crt-matrix)}
+
+/* Beyond the screen: 4-up cards, multi-column interest list */
+.cols.afk-cards{grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:20px}
+ul.cols3{columns:3 190px;column-gap:28px}
+ul.cols3 li{break-inside:avoid}
